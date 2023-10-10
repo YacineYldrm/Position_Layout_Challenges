@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "poppins-rg";
+    src: url(./../font/Poppins-Regular.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    height: 100vh;
+    background: url(https://source.unsplash.com/featured/1400x1200) center / cover no-repeat;
+}
+
+div
+{
+    position: relative;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    text-align: right;
+}
+
+h1, h2
+{
+    color: white;
+    font-family: "poppins-rg";
+    font-size: 2rem;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 24px;
+}

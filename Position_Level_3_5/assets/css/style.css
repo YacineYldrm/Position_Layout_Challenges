@@ -1,0 +1,230 @@
+/* ##################### RESETS/GENERALS ########################## */
+
+@font-face {
+    font-family: "mont-bd";
+    src: url(./../font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "mont-lt";
+    src: url(./../font/Montserrat-Light.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    position: relative;
+    text-transform: uppercase;
+    font-family: "mont-bd";
+    overflow-x: hidden;
+}
+
+main
+{
+    position: absolute;
+    top: 92.2vh;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ##################### HERO SECTION ########################## */
+
+
+.hero_wrapper
+{
+    height: 100vh;
+    position: relative;
+    background: url(https://s3-alpha-sig.figma.com/img/2273/9b43/5c9dafb2ccae0482f20dcb0fa3bbbf52?Expires=1698019200&Signature=P~0tC6THNhwaWIwHTUQSiUOdengIH~RKS4D1xO0Hmi3OMihDFA8MLvNtgin1Fq~V8nkL-7j3SHQEbWcBgr6UtCAY1azfcOYtnoCCHiV0e6AUuhdfUweWR5wEe1ECHXBBSFXyK1N3zAt78k2V8W2upCd519LVF~2Eu5LmteWwZZBxovQ6fEL3vwLfNUQXGbmHKlNBlfGvzxApIPTVpns99rL836xsYVBUg9xQnfOFjx~43AcJjZ7XzxjTpvQY6t~NHqHqGtilhInbd4xOiU4iY9J5AFQJT-LLH~UobynzcBJ-gIGbUGMe3WoTnEJSvx6TXSTG~L1cbwT16J-vf4bw1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) center / cover;
+    position: relative;
+}
+
+.hero_wrapper div a span
+{
+    text-transform: none;
+}
+
+.hero_wrapper div
+{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero_wrapper div a
+{
+    font-size: 1.125rem;
+}
+
+
+/* ##################### STICKY NAV BAR ########################## */
+
+
+.nav_bar_wrapper
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 228px;
+    background-color: rgba(0, 0, 0, 0.357);
+    padding: 18px 48px;
+    color: white;
+}
+
+.nav_bar_wrapper div
+{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-right: 25%;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 32px;
+}
+
+/* ##################### GALLERY SECTION ########################## */
+
+.gallery_body
+{
+    padding-inline: 40px;
+    width: 100vw;
+    overflow-x:hidden;
+}
+
+.gallery_body div:nth-of-type(1)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery_body h2
+{
+    font-size: 38px;
+    margin: 24px;
+    
+}
+
+.gallery_body div p
+{
+    font-size: 38px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: -6px ;
+    text-decoration-style: solid;   
+    text-decoration-thickness: 6px;
+    font-family: "mont-rg";
+    color: white;
+    margin-bottom: 24px;
+}
+
+.gallery_wrapper
+{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 38px;
+    margin-bottom: 118px;
+}
+
+/* ##################### TOUR DATES SECTION ########################## */
+
+.tour_info_wrapper 
+{
+    text-transform: none;
+    font-family: "mont-lt";
+    padding-inline: 40px;
+    color: #333;
+}
+
+.tour_info_wrapper h3
+{
+    font-family: "mont-bd";
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+
+}
+
+.tour_info_wrapper ul
+{
+    list-style: none;
+    margin-bottom: 64px;
+}
+
+.tour_info_wrapper ul li
+{
+    font-weight: 100;
+    list-style: none;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.sold_out
+{
+    color: red;
+}
+
+.available
+{
+    color: green;
+}
+
+
+
+/* ##################### MEDIA QUERIES ########################## */
+
+
+@media screen and (max-width: 1440px) 
+{
+    img
+    {
+        height: 100%;
+    }
+
+    main
+    {
+        position: absolute;
+        top: 90.1vh;
+    }
+}
+
+@media screen and (min-width: 1460px) 
+{
+    img
+    {
+        height: 100%;
+    }
+
+    .gallery_wrapper
+    {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+}
