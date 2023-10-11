@@ -28,9 +28,11 @@ a
     text-transform: uppercase;
 }
 
+
 img
 {
-    width: 14vw;
+    display: block;
+    max-width: 100%;
 }
 
 :root
@@ -48,10 +50,9 @@ img
 
 /* ############### HERO SECTION ################## */
 
-.header_wrapper
+body
 {
     background-color: var(--bg-color-body);
-    height: 100vh;
 }
 
 /* ---- NAV BAR ----- */
@@ -97,15 +98,16 @@ img
 
 /* ############# HEADER BODY ############### */
 
-.header_wrapper
+main
 {
     position: relative;
+    height: 125vh;
 }
 
 .headline
 {
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 40%;
 }
 
@@ -129,15 +131,21 @@ img
 .example_images
 {
     position: absolute;
-    left: 52vw;
-    bottom: 10%;
+    left: 48%;
+    bottom: 12%;
+    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    /* grid-row:inherit; */
+    column-gap: 24px;
+
 }
 
+/* 
 .example_images img
 {
-    margin-left: 24px;
-    margin-bottom: 48px;
-}
+    height: 550px; 
+} */
 
 /* ############# BOTTOM BAR ############# */
 
@@ -176,3 +184,5 @@ img
     padding: 12px 18px;
     border-radius: 40px;
 }
+
+
