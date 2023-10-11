@@ -141,7 +141,7 @@ main
 
 /* ############# BOTTOM BAR ############# */
 
-.second_bar_wrapper
+.footer_wrapper
 {
     display: flex;
     justify-content: space-between;
@@ -152,7 +152,7 @@ main
     padding-bottom: 40px;
 }
 
-.second_bar_wrapper div img
+.footer_wrapper div img
 {
     height: 20px;
     width: 20px;
@@ -162,6 +162,7 @@ main
 {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .arrows
